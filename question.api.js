@@ -13,3 +13,5 @@ function getQuestions(res){
 question.get("/questions",(req,res)=>{
     getQuestions(res);
 });
+
+module.exports = question;

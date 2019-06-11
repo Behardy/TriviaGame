@@ -206,7 +206,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n\n  <form #quForm=\"ngForm\" (ngSubmit)= \"submitAnswer(quForm)\">\n<div *ngFor=\"let question of questions; index as i\">\n\n<p>{{question.question}}</p>\n<input value=\"{{question.choice_1}}\"  name=\"question{{i+1}}\"  ngModel type=\"radio\">\n<label for=\"\">{{question.choice_1}} </label>\n\n<input value=\"{{question.choice_2}}\" name=\"question{{i+1}}\" ngModel type=\"radio\">\n<label for=\"\">{{question.choice_2}} </label>\n\n<input value=\"{{question.choice_3}}\" name=\"question{{i+1}}\" ngModel type=\"radio\">\n<label for=\"\">{{question.choice_3}} </label>\n\n<input value=\"{{question.choice_4}}\" name=\"question{{i+1}}\" ngModel type=\"radio\">\n<label for=\"\">{{question.choice_4}} </label>\n</div>\n<button>Submit</button>\n</form>\n"
+module.exports = "\n\n  <form #quForm=\"ngForm\" (ngSubmit)= \"submitAnswer(quForm)\">\n    <input type=\"text\"> Name:\n<div *ngFor=\"let question of questions; index as i\">\n\n<p>{{question.question}}</p>\n<input value=\"{{question.choice_1}}\"  name=\"question{{i+1}}\"  ngModel type=\"radio\">\n<label for=\"\">{{question.choice_1}} </label>\n\n<input value=\"{{question.choice_2}}\" name=\"question{{i+1}}\" ngModel type=\"radio\">\n<label for=\"\">{{question.choice_2}} </label>\n\n<input value=\"{{question.choice_3}}\" name=\"question{{i+1}}\" ngModel type=\"radio\">\n<label for=\"\">{{question.choice_3}} </label>\n\n<input value=\"{{question.choice_4}}\" name=\"question{{i+1}}\" ngModel type=\"radio\">\n<label for=\"\">{{question.choice_4}} </label>\n</div>\n<button>Submit</button>\n</form>\n"
 
 /***/ }),
 
@@ -234,6 +234,9 @@ var QuizComponent = /** @class */ (function () {
             _this.question = response;
         });
     }
+    QuizComponent.prototype.submitAnswer = function () {
+        this.quizService.addScores;
+    };
     QuizComponent.prototype.ngOnInit = function () {
     };
     QuizComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([

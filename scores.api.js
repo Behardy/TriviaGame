@@ -20,3 +20,5 @@ score.post("/scores",(req,res)=>{
         getScores(res);
     });
 });
+
+module.exports = score;

@@ -4,7 +4,7 @@
     <input type="text"> Name:
 <div *ngFor="let question of questions; index as i">
 
-<p>{{question.question}}</p>
+<p>{{question.question_name}}</p>
 <input value="{{question.choice_1}}"  name="question{{i+1}}"  ngModel type="radio">
 <label for="">{{question.choice_1}} </label>
 
