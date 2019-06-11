@@ -1,0 +1,14 @@
+body{
+    background-position: center;
+    margin: 10px;
+    position: relative;
+    justify-content: inherit;
+    background: purple;
+    
+}
+button{
+    width: 50px;
+    margin:5px;
+    background-color: blue;
+    color:rgb(197, 174, 174); 
+}
